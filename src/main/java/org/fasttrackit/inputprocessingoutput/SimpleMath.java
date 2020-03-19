@@ -1,5 +1,7 @@
 package org.fasttrackit.inputprocessingoutput;
 
+import java.util.Scanner;
+
 public class SimpleMath {
     public static String number1 = "10";
     public static String number2 = "5";
@@ -14,4 +16,8 @@ public class SimpleMath {
                 (Integer.parseInt(number1) / Integer.parseInt(number2)) + "\n"));
 
     }
-}
+
+
+
+    }
+
