@@ -1,9 +1,18 @@
 package org.fasttrackit.inputprocessingoutput;
 
+
+import java.util.Scanner;
+
 public class CountingTheNumberOfWords {
 
-    String name;
+    public static void main(String[] args) {
 
-    String quote;
-    String author;
+        Scanner scanner2 = new Scanner(System.in);
+
+        System.out.println("What is the input string?");
+
+        String userInput = scanner2.nextLine();
+        System.out.println(userInput + " has " + userInput.length() + " characters");
+
     }
+}

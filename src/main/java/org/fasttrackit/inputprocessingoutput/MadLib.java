@@ -1,13 +1,29 @@
 package org.fasttrackit.inputprocessingoutput;
 
+
+
+import java.util.Scanner;
+
 public class MadLib {
-    public static String noun = "dog";
-    public static String verb = "walk";
-    public static String adjective = "blue";
-    public static String adverb = "quickly";
 
 
     public static void main(String[] args) {
-        System.out.println("Enter noun: " + noun + "\n" + "Enter verb: " + verb + "\n" + "Enter an adjective: " + adjective + "\n" + "Enter an adverb: " + adverb + "\n" + "Do you " + verb + " your " + adjective + " " + noun + " " + adverb + "?" + "That's hilarious!");
+
+        Scanner keyboard = new Scanner(System.in);
+        String dog, walk, quikly, blue;
+
+        System.out.println("Enter a noam: " );
+        dog = keyboard.nextLine();
+        System.out.println("Enter an adjective: ");
+        blue = keyboard.nextLine();
+        System.out.println("Enter a verb: ");
+        walk = keyboard.nextLine();
+        System.out.println("Enter an adverb: ");
+        quikly = keyboard.nextLine();
+        System.out.println("Do you " +  walk + "your " + " " +blue  +" "+ dog  +" " +  quikly + "? " + "That's hilarious!" );
+
+
     }
+
 }
+

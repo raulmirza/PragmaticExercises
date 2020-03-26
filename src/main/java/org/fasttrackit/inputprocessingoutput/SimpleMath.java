@@ -3,21 +3,21 @@ package org.fasttrackit.inputprocessingoutput;
 import java.util.Scanner;
 
 public class SimpleMath {
-    public static String number1 = "10";
-    public static String number2 = "5";
-
 
     public static void main(String[] args) {
 
-        System.out.println("What is the first number? " + number1 + "\n" + "What is the second number? " + number2 + "\n" + (number1 + "+" + number2 + "=" +
-                (Integer.parseInt(number1) + Integer.parseInt(number2)) + "\n" + number1 + "-" + number2 + "=" +
-                (Integer.parseInt(number1) - Integer.parseInt(number2))+ "\n" + number1 + "*" + number2 + "=" +
-                (Integer.parseInt(number1) * Integer.parseInt(number2)) + "\n" + number1 + "/" + number2 + "=" +
-                (Integer.parseInt(number1) / Integer.parseInt(number2)) + "\n"));
+        Scanner scanner = new Scanner(System.in);
+        int num1, num2;
+
+        System.out.println("What is the first  number? " );
+        num1 = scanner.nextInt();
+        System.out.println("What is the second number? ");
+        num2= scanner.nextInt();
+        System.out.println(num1 + num2);
+        System.out.println(num1 - num2);
+        System.out.println(num1 * num2);
+        System.out.println(num1 / num2);
+
 
     }
-
-
-
-    }
-
+}
