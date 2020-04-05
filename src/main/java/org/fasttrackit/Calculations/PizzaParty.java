@@ -15,8 +15,8 @@ public class PizzaParty {
         int pizzaSlicesInOnePizza = 8;
         double maxNumberOfSlices = pizzas*pizzaSlicesInOnePizza/people;
         System.out.println("There are " + people + " people" + "\n" + "each person gets " + maxNumberOfSlices + " slices of pizza");
-        double leftOvers = maxNumberOfSlices/pizzas;
-        System.out.println("There are " + leftOvers + "leftovers slices");
+        int leftOvers = pizzaSlicesInOnePizza*pizzas % people;
+        System.out.println("There are " + leftOvers + " leftovers slices");
 
 
     }
